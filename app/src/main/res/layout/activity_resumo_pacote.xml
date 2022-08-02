@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.activity.ResumoPacoteActivity">
+
+  <ImageView
+    android:id="@+id/resumo_pacote_imagem_local"
+    android:layout_width="0dp"
+    android:layout_height="140dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    tools:src="@sample/pacote.json/pacotes/imagem"
+    app:layout_constraintVertical_bias="0"
+    android:scaleType="centerCrop"
+    android:contentDescription="@string/ilustracao_cidade" />
+
+  <TextView
+    android:id="@+id/resumo_pacote_nome_cidade"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/resumo_pacote_imagem_local"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:text="@sample/pacote.json/pacotes/local"
+    android:textStyle="bold"
+    android:layout_margin="8dp"
+    android:textSize="24sp" />
+
+  <TextView
+    android:id="@+id/resumo_pacote_dias"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="16sp"
+    android:layout_marginVertical="8dp"
+    app:layout_constraintTop_toBottomOf="@id/resumo_pacote_nome_cidade"
+    app:layout_constraintStart_toStartOf="@id/resumo_pacote_nome_cidade"
+    tools:text="@sample/pacote.json/pacotes/dias"/>
+
+  <TextView
+    android:id="@+id/resumo_pacote_data"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/resumo_pacote_dias"
+    app:layout_constraintStart_toStartOf="@id/resumo_pacote_dias"
+    android:layout_marginVertical="8dp"
+    tools:text="8/12 - 10/12 de 2017"
+    android:textSize="14sp"/>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="@id/resumo_pacote_preco"
+    app:layout_constraintBottom_toTopOf="@id/resumo_pacote_preco"
+    android:textSize="14sp"
+    android:text="@string/preco_final"/>
+
+  <TextView
+    android:id="@+id/resumo_pacote_preco"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:text="@sample/pacote.json/pacotes/preco"
+    android:layout_margin="8dp"
+    android:textSize="20sp"
+    android:textColor="@android:color/holo_green_dark"
+    app:layout_constraintBottom_toBottomOf="@id/resumo_pacote_data"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+  <androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/resumo_botao_realizar_pagamento"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintVertical_bias="1"
+    android:textColor="@color/white"
+    android:text="@string/botao_realizar_pagamento"
+    android:background="@drawable/botao_redondo_laranja"
+    android:backgroundTint="@android:color/holo_orange_dark"
+    />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

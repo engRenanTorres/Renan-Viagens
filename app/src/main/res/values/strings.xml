@@ -3,4 +3,7 @@
   <string name="especiais">Especiais</string>
   <string name="brasil">Brasil</string>
   <string name="imagem_da_cidade">Imagem da Cidade</string>
+  <string name="preco_final">Preço final:</string>
+  <string name="ilustracao_cidade">cidade</string>
+  <string name="botao_realizar_pagamento">REALIZAR PAGAMENTO</string>
 </resources>
